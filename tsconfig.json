@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "ES6"],
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "allowJs": true,
+    "strictNullChecks": true,
+    "baseUrl": "./public/",
+    "outDir": "src/dist",
+    "paths": {
+      "@grafana/slate-react": ["../node_modules/@types/slate-react"],
+      "app": ["app/"],
+      "sass": ["sass/"]
+    },
+    "types": ["vite/client"],
+    "typeRoots": ["./node_modules/@types"],
+  },
+  "include": [
+    "public/app/**/*.ts*",
+    "public/e2e-test/**/*.ts",
+    "public/test/**/*.ts",
+    "public/vendor/**/*.ts",
+    "packages/jaeger-ui-components/typings",
+    "packages/grafana-data/typings"
+  ]
+}

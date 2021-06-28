@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declarationDir": "dist",
+    "outDir": "compiled",
+    "rootDirs": ["."],
+    "paths": {
+      "@grafana/slate-react": ["../grafana-ui/node_modules/@types/slate-react"]
+    },
+    "typeRoots": ["node_modules/@types"],
+    "isolatedModules": true,
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "ES6"],
+    "allowJs": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "jsx": "react",
+    "types": ["vite/client"]
+  },
+  "exclude": ["dist", "node_modules"],
+  "extends": "@grafana/tsconfig",
+  "include": ["src/**/*.ts*", "../../public/app/types/jquery/*.ts", "../../public/app/types/*.d.ts"]
+}
